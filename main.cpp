@@ -4,6 +4,7 @@
 
 int main() {
 	std::cout << "Hello, World!" << std::endl;
-	ft::vector<int>		vec;
+	ft::vector<int>				vec;
+	std::vector<int>::iterator	it;
 	return 0;
 }
