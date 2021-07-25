@@ -15,6 +15,14 @@ namespace vector_iterator {
 	public:
 		explicit ft_iterator(pointer ptr) : m_ptr(ptr) {};
 		~ft_iterator() {};
+		ft_iterator(const ft_iterator &copy) { *this = copy };
+		ft_iterator& operator= (const ft_iterator &iter)
+		{
+			if (this == &iter)
+				return (*this);
+			m_ptr = iter.m_ptr;
+			return (*this);
+		}
 	};
 }
 
