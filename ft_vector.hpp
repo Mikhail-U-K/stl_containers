@@ -4,7 +4,6 @@
 #include <memory>
 #include "ft_iterator.hpp"
 
-
 namespace ft {
 	template<class T, typename Allocator = std::allocator<T> >
 	class vector {
